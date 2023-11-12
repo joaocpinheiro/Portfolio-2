@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Urbanist:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+.font-libre {
+  font-family: "Libre Boskerville", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.sticky__header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px -8px 3px #ddd;
+  z-index: 99;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background: #00000084;
+    z-index: 100;
+    display: none;
+  }
+
+  .menu ul {
+    overflow: hidden;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    border-radius: 0 0 0 20px;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu li a {
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+.animated {
+  animation-name: slideDown;
+  animation-duration: 0.3s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
