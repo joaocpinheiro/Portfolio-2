@@ -17,7 +17,7 @@ const Skills = () => {
     >
       {/* ==== Container ==== */}
       <div
-        data-aos="fade-zoom-in"
+        data-aos="fade-right"
         data-aos-delay="50"
         data-aos-duration="2000"
         className="container mx-auto p-4 flex flex-col justify-center max-w-[1100px] h-full"

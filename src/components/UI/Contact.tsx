@@ -32,7 +32,7 @@ const Contact = () => {
             console.log(result.text);
             let message = (
               <div
-                data-aos="fade-zoom-in"
+                data-aos="fade-right"
                 data-aos-delay="50"
                 data-aos-duration="300"
                 className="fixed top-32 z-50 left-auto w-[80%] sm:w-auto sm:right-9 flex items-center p-4 mb-4 text-[16px] text-green-800 border font-semibold border-green-300 rounded-lg bg-green-100 dark:bg-gray-800 dark:text-green-400 dark:border-green-800"

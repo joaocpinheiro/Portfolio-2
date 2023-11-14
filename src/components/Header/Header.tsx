@@ -33,20 +33,35 @@ const Header = () => {
     });
   };
 
+  React.useEffect(() => {
+    const mode = localStorage.getItem("mode");
+    if (mode === "light") {
+      document.documentElement.classList.remove("dark");
+      setTheme(mode);
+    } else if (mode === "dark") {
+      document.documentElement.classList.add(mode);
+      console.log(mode);
+      setTheme(mode);
+    } else {
+      document.documentElement.classList.add("dark");
+      setTheme("dark");
+    }
+  }, []);
+
   function handleTheme() {
-    // Troque o estado do tema quando o botão de tema for clicado.
+    // Troca o estado do tema quando o botão de tema for clicado.
     if (theme === "light") {
       setTheme("dark");
       document.documentElement.classList.add("dark");
+      localStorage.setItem("mode", "dark");
     } else {
       setTheme("light");
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("mode", "light");
     }
   }
 
-  React.useEffect(() => {
-    document.documentElement.classList.add("dark");
-  }, []);
+  React.useEffect(() => {}, []);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const target = e.target as HTMLElement | null;

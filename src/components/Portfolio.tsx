@@ -22,7 +22,7 @@ const Portfolio = () => {
     <section id="portfolio">
       <div
         className="container"
-        data-aos="fade-zoom-in"
+        data-aos="fade-right"
         data-aos-delay="500"
         data-aos-duration="2000"
       >
