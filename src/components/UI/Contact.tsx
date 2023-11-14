@@ -97,7 +97,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pb-16">
+    <section
+      data-aos="fade-zoom-in"
+      data-aos-delay="500"
+      data-aos-duration="2000"
+      id="contact"
+      className="pb-16"
+    >
       <div className="container ">
         <h2
           className="border-b-4 

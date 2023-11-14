@@ -14,11 +14,6 @@ const Header = () => {
 
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
-  // const options = {
-  //   icon1: "MdDarkMode",
-  //   icon2: "BsSun",
-  // };
-
   const [theme, setTheme] = React.useState("dark");
   let isTheme = theme === "light" ? "bg-white" : "dark:bg-darkMode";
 
@@ -141,9 +136,9 @@ const Header = () => {
                   <a
                     onClick={handleClick}
                     className="text-smallTextColor dark:text-textDark font-[600]"
-                    href="#about"
+                    href="#home"
                   >
-                    Sobre
+                    Home
                   </a>
                 </li>
                 <li>
@@ -153,6 +148,15 @@ const Header = () => {
                     href="#services"
                   >
                     Serviços
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={handleClick}
+                    className="text-smallTextColor dark:text-textDark font-[600]"
+                    href="#about"
+                  >
+                    Sobre
                   </a>
                 </li>
                 <li>
