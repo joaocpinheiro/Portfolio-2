@@ -20,7 +20,12 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <div className="container">
+      <div
+        className="container"
+        data-aos="fade-zoom-in"
+        data-aos-delay="500"
+        data-aos-duration="2000"
+      >
         <div className="flex items-center justify-between flex-wrap">
           <div className="mb-7 sm:mb-0">
             <h3 className="border-b-4 border-primaryColor text-headingColor text-[2rem] font-[700]  dark:text-textDark rounded-lg">
@@ -33,9 +38,6 @@ const Portfolio = () => {
         <div className=" flex items-center gap-4 flex-wrap mt-12 z-20">
           {portfolios?.slice(0, nextItems).map((portfolio, index) => (
             <div
-              data-aos="fade-zoom-in"
-              data-aos-delay="50"
-              data-aos-duration="2000"
               key={index}
               className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1] "
             >

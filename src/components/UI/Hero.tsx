@@ -7,6 +7,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { BsArrowDown } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -19,8 +20,8 @@ const Hero = () => {
 
   return (
     <section
-      className="container pt-5 sm:pt-0 sm:w-full sm:flex items-center font-titlefont h-full "
-      id="about"
+      className="container pt-5 sm:pt-0 sm:w-full sm:flex items-center font-titlefont sm:h-screen"
+      id="home"
     >
       <div className="sm:w-1/2 sm:flex flex-col gap-5">
         <div className="flex flex-col gap-5">
@@ -49,33 +50,40 @@ const Hero = () => {
             data-aos-delay="200"
             className="flex items-center gap-5 mt-7 "
           >
-            <a href="#contact">
-              <button className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
-                <i className="ri-mail-line"></i>E-mail
-              </button>
-            </a>
-            <a
-              href="#portfolio"
-              className=" group text-smallTextColor font-[700] text-[18px] border-b border-solid border-primaryColor dark:text-textDark"
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] cursor-pointer"
+            >
+              <i className="ri-mail-line"></i>E-mail
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="group text-smallTextColor font-[700] text-[18px] border-b border-solid border-primaryColor dark:text-textDark cursor-pointer"
             >
               Veja o portfolio{" "}
               <span className="transform group-hover:rotate-90 inline-block duration-300">
                 <HiArrowNarrowRight />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="md:w-1/2 sm:w-1/2 mt-10 w-full flex justify-center items-center sm:items-center sm:justify-center">
-        <figure className="bg-red-600flex items-center justify-center">
+        <figure className="flex items-center justify-center hover:scale-110 duration-500">
           <img src={HeroImg} alt="" />
         </figure>
       </div>
       <div className="hidden z-10 lg:flex fixed flex-col top-[35%] lg:right-[0px]">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] duration-300 bg-blue-600 ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] rounded-[16px]  duration-300 bg-blue-600 ">
             <a
-              className="flex justify-between items-center w-full text-gray-50 pr-2"
+              className="flex justify-between items-center w-full text-gray-50 pr-2 "
               target="blank"
               href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pinheiro/"
             >
@@ -83,7 +91,7 @@ const Hero = () => {
               Linkedin
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] duration-300 bg-darkMode dark:bg-black">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] rounded-[16px] duration-300 bg-darkMode dark:bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-50 dark:text-textDark pr-2 "
               target="blank"
@@ -93,7 +101,7 @@ const Hero = () => {
               GitHub
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:ml-[-100px] rounded-[16px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-50 pr-2"
               href="mailto:joaocpinheiro03@gmail.com"

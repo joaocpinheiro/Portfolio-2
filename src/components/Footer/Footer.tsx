@@ -1,4 +1,6 @@
 import React from "react";
+import Contact from "../UI/Contact";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const year = new Date().getFullYear;
@@ -13,16 +15,22 @@ const Footer = () => {
               Você precisa de algum projeto?
             </h2>
           </div>
-          <a href="#contact" className="flex items-center justify-center">
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="flex items-center justify-center"
+          >
             <button className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] ">
               <i className="ri-mail-line"></i>Entre em contato
             </button>
-          </a>
+          </Link>
         </div>
 
         <div className="w-full">
           <div className="flex items-center justify-center gap-4 flex-wrap md:gap-8 mt-10">
-            <span className="text-gray-300 font-bold text-[1rem] ">
+            <span className="text-gray-300 font-bold text-[1.6rem] ">
               Me siga nas redes sociais:{" "}
             </span>
             <span className="w-[35px] h-35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">

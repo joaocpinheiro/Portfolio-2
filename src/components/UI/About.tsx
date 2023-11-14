@@ -7,36 +7,44 @@ const About = () => {
   return (
     <section
       id="about"
-      data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="2000"
-      className="container lg:max-w-[1400px] z-1"
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-duration="3000"
+      className="container lg:max-w-[1400px] z-1 "
     >
       <div className="flex z-1 justify-center">
         <h2 className="inline-block mb-20 mt-0 text-4xl font-bold border-b-4 border-primaryColor text-headingColor dark:text-textDark rounded-lg">
           Sobre mim
         </h2>
       </div>
+      <div className="flex items-center justify-center gap-[1rem]">
+        <article className="hidden lg:block bg-primaryColor border-[1px] border-transparent rounded-[1rem] p-[1rem] text-center mt-5 sm:mt-0 text-white">
+          <h5 className="flex justify-center items-center text-[18px]">
+            <img src={local} alt="local" className="w-[32px]" />
+            Florianópolis - SC
+          </h5>
+        </article>
+      </div>
 
-      <div className="sm:grid z-1 sm:grid-cols-2 gap-[10%]">
-        <div className="w-full h-full min-w-[320px] min-h-[200px] aspect-square rounded-[2rem] grid place-items-center">
-          <div className="sm:basis-1/2">
+      <div className="lg:grid z-1 lg:grid-cols-2 gap-[10%]">
+        <div className="w-full h-min-w-[320px] min-h-[200px]  rounded-[2rem] grid  place-items-center">
+          <div className="lg:basis-1/2 lg:mt-16 hover:scale-110 duration-500">
             <img src={aboutImg} alt="about image" />
           </div>
         </div>
+        <div className="lg:hidden flex items-center justify-center gap-[1rem]">
+          <article className=" bg-primaryColor border-[1px] border-transparent rounded-[1rem] p-[1rem] text-center mt-5 text-white">
+            <h5 className="flex justify-center items-center text-[18px]">
+              <img src={local} alt="local" className="w-[32px]" />
+              Florianópolis - SC
+            </h5>
+          </article>
+        </div>
 
-        <div className="lg:mr-10 z-1 mr-0">
-          <div className="flex items-center justify-center gap-[1rem]">
-            <article className=" bg-primaryColor border-[1px] border-transparent rounded-[1rem] p-[1rem] text-center mt-5 sm:mt-0 text-white">
-              <h5 className="flex justify-center items-center text-[18px]">
-                <img src={local} alt="local" className="w-[32px]" />
-                Florianópolis - SC
-              </h5>
-            </article>
-          </div>
+        <div className="lg:mr-10 z-1 mr-0 lg:mt-16 mt-7">
           <div className="z-1 basis-1/2">
             <div className=" h-full flex items-center justify-center">
-              <p className="text-center mt-7 relative before:block before:content-[''] before:w-3 before:h-[3px] before:rounded-[15px] before:bg-primaryColor before:absolute before:-left-3 before:top-3 before:-translate-x-1/2 font-bold text-[21px]">
+              <p className="text-center relative before:block before:content-[''] before:w-3 before:h-[3px] before:rounded-[15px] before:bg-primaryColor before:absolute before:-left-3 before:top-3 before:-translate-x-1/2 font-bold text-[21px]">
                 Quem sou eu?
               </p>
             </div>

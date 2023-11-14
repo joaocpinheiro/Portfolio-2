@@ -1,5 +1,7 @@
 import React from "react";
 import portfolios from "../../assets/data/portfolioData";
+import { TbExternalLink } from "react-icons/tb";
+import gitDark from "../../assets/images/github-dark.png";
 
 const Modal = ({
   activeID,
@@ -22,15 +24,15 @@ const Modal = ({
         )
           setShowModal(false);
       }}
-      className=" w-full sm:h-full fixed h-full top-12 left-0 z-10 bg-headingColor bg-opacity-40"
+      className=" w-full sm:h-full fixed h-screen top-10 left-0 z-10 bg-headingColor bg-opacity-40 overflow-y-auto"
     >
       <div
         ref={modalRef}
-        className="w-11/12 md:max-w-[700px] md:w-full max-h-[80%] md:max-h-[1000px] border-[1px]
-         absolute top-1/2 left-1/2 z-20 bg-white dark:bg-darkMode dark:text-textDark rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5"
+        className="w-11/12 md:max-w-[500px] lg:max-w-[50%] md:w-full max-h-[80%]  border-[1px] lg:max-h-[95%] 
+        absolute top-1/2 left-1/2 z-20 bg-white dark:bg-darkMode dark:text-textDark rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5 overflow-y-auto"
       >
         <div>
-          <figure>
+          <figure className="">
             <img className="rounded-[8px]" src={portfolio?.imgUrl} alt="" />
           </figure>
         </div>
@@ -59,11 +61,30 @@ const Modal = ({
             ))}
           </div>
 
-          <a target="blank" href={portfolio?.siteUrl}>
-            <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">
-              Visitar site
-            </button>
-          </a>
+          <div className="flex justify-between sm:mr-14 w-[100%] sm:w-[100%]">
+            <div className="inline-block">
+              <a target="blank" href={portfolio?.siteUrl}>
+                <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[20px] dark:bg-darkMode dark:border dark:rounded-[20px] font-[500] ease-in duration-300 flex justify-center items-center gap-1 transition-transform transform-gpu hover:scale-105 ">
+                  <span className="text-[20px] h-full">
+                    <TbExternalLink />
+                  </span>
+                  Visitar site
+                </button>
+              </a>
+            </div>
+            <div className="inline-block ">
+              <a target="blank" href={portfolio?.siteCode}>
+                <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[20px] dark:bg-darkMode dark:border dark:rounded-[20px] font-[500] ease-in duration-300 flex justify-center items-center gap-1 transition-transform transform-gpu hover:scale-105">
+                  <img
+                    src={gitDark}
+                    alt=""
+                    className="w-5 inline-block self-center"
+                  />
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
 
         <button
