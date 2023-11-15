@@ -34,8 +34,8 @@ const Contact = () => {
               <div
                 data-aos="fade-right"
                 data-aos-delay="50"
-                data-aos-duration="300"
-                className="fixed top-32 z-50 left-auto w-[80%] sm:w-auto sm:right-9 flex items-center p-4 mb-4 text-[16px] text-green-800 border font-semibold border-green-300 rounded-lg bg-green-100 dark:bg-gray-800 dark:text-green-400 dark:border-green-800"
+                data-aos-duration="2000"
+                className="fixed top-[400px] sm:top-1/2 md:top-20 z-50 left-auto w-[80%] sm:w-auto sm:right-9 flex items-center p-4 mb-4 text-[16px] text-green-800 border font-semibold border-green-300 rounded-lg bg-green-100 dark:bg-gray-800 dark:text-green-400 dark:border-green-800"
                 role="alert"
               >
                 <svg
@@ -64,9 +64,9 @@ const Contact = () => {
 
             let message: React.ReactNode = (
               <div
-                data-aos="fade-zoom-in"
+                data-aos="fade-right"
                 data-aos-delay="50"
-                data-aos-duration="300"
+                data-aos-duration="2000"
                 id="alert-2"
                 className="fixed top-32 z-50 left-auto w-[80%] sm:w-auto sm:right-9 flex m-auto justify-center items-center p-4 mb-4 text-[16px] text-red-800 rounded-lg bg-red-200 font-semibold dark:bg-gray-800 dark:text-red-400"
                 role="alert"
@@ -98,8 +98,8 @@ const Contact = () => {
 
   return (
     <section
-      data-aos="fade-zoom-in"
-      data-aos-delay="500"
+      data-aos="fade-right"
+      data-aos-delay="50"
       data-aos-duration="2000"
       id="contact"
       className="pb-16"

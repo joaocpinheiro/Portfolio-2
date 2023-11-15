@@ -132,7 +132,7 @@ const Header = () => {
           {/* ======= menu start ======= */}
           <div className="flex items-center">
             <button
-              className="md:flex md:justify-self-start md:mr-14 hidden "
+              className="md:flex md:justify-self-start md:mr-14 hidden  transition-transform transform-gpu hover:scale-110 "
               onClick={handleTheme}
             >
               {theme === "dark" ? (
@@ -180,7 +180,7 @@ const Header = () => {
                     className="text-smallTextColor dark:text-textDark font-[600]"
                     href="#portfolio"
                   >
-                    Portfolio
+                    Projetos
                   </a>
                 </li>
                 <li>

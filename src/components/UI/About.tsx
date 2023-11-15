@@ -8,8 +8,8 @@ const About = () => {
     <section
       id="about"
       data-aos="fade-right"
-      data-aos-delay="500"
-      data-aos-duration="3000"
+      data-aos-delay="50"
+      data-aos-duration="2000"
       className="container lg:max-w-[1400px] z-1 "
     >
       <div className="flex z-1 justify-center">
