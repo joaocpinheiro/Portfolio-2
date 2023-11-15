@@ -29,37 +29,39 @@ const Footer = () => {
         </div>
 
         <div className="w-full">
-          <div className="flex items-center justify-center gap-4 flex-wrap md:gap-8 mt-10">
+          <div className="flex items-center justify-center gap-4 flex-wrap md:gap-8 mt-10 basis-1/2">
             <span className="text-gray-300 font-bold text-[1.6rem] ">
               Me siga nas redes sociais:{" "}
             </span>
-            <span className="w-[35px] h-35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">
-              <a
-                href="https://github.com/joaocpinheiro"
-                target="blank"
-                className="text-gray-300 font-[500] text-[18px]"
-              >
-                <i className="ri-github-fill"></i>
-              </a>
-            </span>
-            <span className="w-[35px] h-35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">
-              <a
-                href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pinheiro/"
-                target="blank"
-                className="text-gray-300 font-[500] text-[18px]"
-              >
-                <i className="ri-linkedin-box-fill"></i>
-              </a>
-            </span>
-            <span className="w-[35px] h-35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">
-              <a
-                href="https://instagram.com/joaocpinheiro"
-                target="blank"
-                className="text-gray-300 font-[500] text-[18px]"
-              >
-                <i className="ri-instagram-line"></i>
-              </a>
-            </span>
+            <div className="basis-1/7 flex items-center justify-center gap-4 flex-wrap ">
+              <span className="w-[40px] h-[40px]  bg-[#2b2d33]  transition-transform transform-gpu hover:scale-110   p-1 rounded-[50px] flex items-center justify-center cursor-pointer text-center">
+                <a
+                  href="https://github.com/joaocpinheiro"
+                  target="blank"
+                  className="text-gray-300 font-[500] text-[25px]"
+                >
+                  <i className="ri-github-fill"></i>
+                </a>
+              </span>
+              <span className="w-[40px] h-[40px]  bg-[#2b2d33]  transition-transform transform-gpu hover:scale-110  p-1 rounded-[50px] flex items-center justify-center cursor-pointer text-center">
+                <a
+                  href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pinheiro/"
+                  target="blank"
+                  className="text-gray-300 font-[500] text-[25px] "
+                >
+                  <i className="ri-linkedin-box-fill"></i>
+                </a>
+              </span>
+              <span className="w-[40px] h-[40px]  bg-[#2b2d33]  transition-transform transform-gpu hover:scale-110  p-1 rounded-[50px] flex items-center justify-center cursor-pointer text-center">
+                <a
+                  href="https://instagram.com/joaocpinheiro"
+                  target="blank"
+                  className="text-gray-300 font-[500] text-[25px]"
+                >
+                  <i className="ri-instagram-line"></i>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Portfolio = () => {
       <div
         className="container"
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="50"
         data-aos-duration="2000"
       >
         <div className="flex items-center justify-between flex-wrap">
@@ -35,16 +35,16 @@ const Portfolio = () => {
         </div>
 
         {/* ====== imagens portfolio ====== */}
-        <div className=" flex items-center gap-4 flex-wrap mt-12 z-20">
+        <div className=" flex items-center gap-4 flex-wrap mt-12 z-20 ">
           {portfolios?.slice(0, nextItems).map((portfolio, index) => (
             <div
               key={index}
               className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1] "
             >
-              <figure>
-                <img className="rounded-[8px]" src={portfolio.imgUrl} alt="" />
+              <figure className="">
+                <img className="rounded-[8px] " src={portfolio.imgUrl} alt="" />
               </figure>
-              <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block cursor-pointer rounded-[8px] ">
+              <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block cursor-pointer rounded-[8px]  ">
                 <div
                   onClick={() => showModalHandler(+portfolio.id)}
                   className="w-full h-full flex items-center justify-center"

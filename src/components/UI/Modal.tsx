@@ -28,7 +28,7 @@ const Modal = ({
     >
       <div
         ref={modalRef}
-        className="w-11/12 md:max-w-[500px] lg:max-w-[50%] md:w-full max-h-[80%]  border-[1px] lg:max-h-[95%] 
+        className="w-10/12 max-h-[85%] md:max-w-[650px] lg:max-w-[650px] md:w-full border-[1px] lg:max-h-[90%] 
         absolute top-1/2 left-1/2 z-20 bg-white dark:bg-darkMode dark:text-textDark rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5 overflow-y-auto"
       >
         <div>
@@ -74,7 +74,7 @@ const Modal = ({
             </div>
             <div className="inline-block ">
               <a target="blank" href={portfolio?.siteCode}>
-                <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[20px] dark:bg-darkMode dark:border dark:rounded-[20px] font-[500] ease-in duration-300 flex justify-center items-center gap-1 transition-transform transform-gpu hover:scale-105">
+                <button className="bg-darkMode text-white py-2 px-4 my-8 rounded-[20px] dark:bg-darkMode dark:border dark:rounded-[20px] font-[500] ease-in duration-300 flex justify-center items-center gap-1 transition-transform transform-gpu hover:scale-105">
                   <img
                     src={gitDark}
                     alt=""
