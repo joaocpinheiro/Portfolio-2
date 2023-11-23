@@ -8,6 +8,7 @@ import Skills from "./components/UI/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/UI/Contact";
 import About from "./components/UI/About";
+import History from "./components/UI/History";
 
 function App() {
   React.useEffect(() => {
@@ -19,8 +20,8 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <History />
         <Skills />
-        <About />
         <Portfolio />
         <Contact />
       </main>

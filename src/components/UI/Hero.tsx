@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Software Developer.", "Front-end Developer."],
+    words: [" Aventureiro!", " de Software."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -20,30 +20,45 @@ const Hero = () => {
 
   return (
     <section
-      className="container pt-5 sm:pt-0 sm:w-full sm:flex items-center font-titlefont sm:h-screen"
+      className="container pt-5 sm:pt-0 sm:w-full lg:flex items-center font-titlefont lg:h-screen"
       id="home"
     >
-      <div className="sm:w-1/2 sm:flex flex-col gap-5">
+      <div className="lg:hidden lg:w-1/2 mt-10 md:max-w-[600px] mx-auto flex justify-center items-center  sm:items-center sm:justify-center">
+        <figure className=" flex items-center justify-center hover:scale-110 duration-500">
+          <img src={HeroImg} alt="" />
+        </figure>
+      </div>
+      <div className="lg:w-[60%] container-flex flex-col gap-5 mt-10">
         <div className="flex flex-col gap-5">
-          <h4 className="text-lg font-semibold"> Olá, seja bem vindo</h4>
-          <h1 className="text-5xl font-bold text-headingColor dark:text-textDark leading-none sm:leading-none">
-            Eu sou{window.innerWidth < 1025 ? <br /> : " "}
-            <span className="text-primaryColor capitalize leading-3 lg:text-6xl">
-              {"\n"}João Carlos
-            </span>
-          </h1>
-          <h2 className="text-[28px] lg:text-[42px] sm:leading-2 leading-3 sm:text-[26px] text-3xl sm:font-bold md:text-3xl md:leading-5 font-extrabold text-headingColor my-0 dark:text-textDark">
-            um <span className="sm:leading-[0px] leading-7">{text}</span>
+          <h1 className="lg:text-[40px] text-[24px] sm:text-[30px] md:text-[38px] font-bold text-headingColor text-center dark:text-textDark leading-7  lg:leading-[3rem] sm:leading-none lg:text-center lg:mt-10 ">
+            <span className="inline-block ">Bem-vindo ao Universo do</span>
+            <br />
+            <span className="text-primaryColor capitalize leading-3 lg:text-[40px] relative">
+              {"\n"} João Carlos
+            </span>{" "}
+            um{" "}
+            {(window.innerWidth < 767 && window.innerWidth > 375) ||
+            window.innerWidth <= 1535 ? (
+              <br />
+            ) : (
+              ""
+            )}{" "}
+            Desenvoldedor
+            <span className="sm:leading-[0px] leading-5">{text}</span>
             <Cursor
               cursorBlinking={true}
               cursorStyle="|"
               cursorColor="#5C00F1"
             />
-          </h2>
-          <p className="text-base dark:text-textDark font-bodyFont leading-6 tracking-wide mt-2">
-            Bem-vindo ao meu portfólio. Sinta-se à vontade para navegar e deixar
-            suas sugestões no meu repositório no Github. Obrigado pela visita!
+          </h1>
+          <p className="text-[18px] md:text-[20px] dark:text-textDark font-normal text-center lg:text-center leading-6 tracking-wide mt-0 max-w-[700px] mx-auto">
+            Dá uma olhada nesse carinha da foto aí em cima! Sim, sou eu,
+            desbravando trilhas, que mais parece estar curtindo uma trilha
+            incrível em meio a uma paisagem de tirar o fôlego. Mas espere aí,
+            não se engane pela aparência serena, também estava preocupado com o
+            bug em produção da noite passada.
           </p>
+
           <div
             data-aos="fade-up"
             data-aos-duration="1800"
@@ -51,30 +66,28 @@ const Hero = () => {
             className="flex items-center gap-5 mt-7 "
           >
             <Link
-              to="contact"
+              to="history"
               smooth={true}
               offset={-80}
               duration={500}
-              className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] cursor-pointer"
+              className="group text-smallTextColor font-[700] text-[18px]  border-primaryColor text-center dark:text-textDark cursor-pointer mx-auto"
             >
-              <i className="ri-mail-line"></i>E-mail
-            </Link>
-            <Link
-              to="portfolio"
-              smooth={true}
-              offset={-80}
-              duration={500}
-              className="group text-smallTextColor font-[700] text-[18px] border-b border-solid border-primaryColor dark:text-textDark cursor-pointer"
-            >
-              Veja o portfolio{" "}
-              <span className="transform group-hover:rotate-90 inline-block duration-300">
-                <HiArrowNarrowRight />
-              </span>
+              <p className="">
+                Deixa eu te contar um pouco da minha história até chegar nesse
+                precioso bug.{" "}
+              </p>
+
+              <button className="mt-10 arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </Link>
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 sm:w-1/2 mt-10 w-full flex justify-center items-center sm:items-center sm:justify-center">
+
+      <div className="hidden lg:w-1/2 max-w-[650px] sm:w-1/2 mt-10 w-full lg:flex justify-center items-center sm:items-center sm:justify-center">
         <figure className="flex items-center justify-center hover:scale-110 duration-500">
           <img src={HeroImg} alt="" />
         </figure>

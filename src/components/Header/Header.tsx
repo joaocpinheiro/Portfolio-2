@@ -40,7 +40,6 @@ const Header = () => {
       setTheme(mode);
     } else if (mode === "dark") {
       document.documentElement.classList.add(mode);
-      console.log(mode);
       setTheme(mode);
     } else {
       document.documentElement.classList.add("dark");
@@ -101,7 +100,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="overflow-hidden w-full h-[80px] leading-[80px] flex items-center"
+      className="overflow-hidden w-full h-[80px] leading-[80px] flex items-center shadow-2xl"
     >
       <div
         data-aos={window.innerWidth > 768 ? "fade-down" : ""}
@@ -160,16 +159,7 @@ const Header = () => {
                   <a
                     onClick={handleClick}
                     className="text-smallTextColor dark:text-textDark font-[600]"
-                    href="#services"
-                  >
-                    Serviços
-                  </a>
-                </li>
-                <li>
-                  <a
-                    onClick={handleClick}
-                    className="text-smallTextColor dark:text-textDark font-[600]"
-                    href="#about"
+                    href="#history"
                   >
                     Sobre
                   </a>
