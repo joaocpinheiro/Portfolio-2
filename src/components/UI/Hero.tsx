@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <section
-      className="container pt-5 sm:pt-0 sm:w-full lg:flex items-center font-titlefont lg:h-screen"
+      className="container pt-5 sm:pt-0 sm:w-full lg:flex items-center font-titlefont mb-20 sm:mb-[220px] pb-0"
       id="home"
     >
       <div className="lg:hidden lg:w-1/2 mt-10 md:max-w-[600px] mx-auto flex justify-center items-center  sm:items-center sm:justify-center">
@@ -52,7 +52,8 @@ const Hero = () => {
             />
           </h1>
           <p className="text-[18px] md:text-[20px] dark:text-textDark font-normal text-center lg:text-center leading-6 tracking-wide mt-0 max-w-[700px] mx-auto">
-            Dá uma olhada nesse carinha da foto aí em cima! Sim, sou eu,
+            Dá uma olhada nesse carinha da foto aí{" "}
+            {window.innerWidth > 1024 ? "do lado!" : "em cima!"} Sim, sou eu,
             desbravando trilhas, que mais parece estar curtindo uma trilha
             incrível em meio a uma paisagem de tirar o fôlego. Mas espere aí,
             não se engane pela aparência serena, também estava preocupado com o

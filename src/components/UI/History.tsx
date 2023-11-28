@@ -11,7 +11,7 @@ const History = () => {
       data-aos-delay="50"
       data-aos-duration="2000"
       id="history"
-      className="w-full h-full m-auto mb-32 "
+      className="w-full h-full m-auto mb-24 sm:mb-40 "
     >
       <CarouselItem slides={slides} />
     </div>

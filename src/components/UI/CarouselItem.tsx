@@ -91,7 +91,7 @@ const CarouselItem = ({ slides }: slides) => {
               Stephen Curry (Bom, pelo menos a foto foi antes de eu errar essa
               bandeja livre). Agora que voce já conheceu um pouco sobre mim, e
               sabe sobre minha paixão em aventuras, basquete e NBA, deixa eu te
-              levar para o universo das tecnologias junto com meus projetos que
+              levar para o universo das tecnologias junto aos meus projetos que
               me fazem perder algumas noites de sono.
             </p>
             <img
@@ -106,7 +106,7 @@ const CarouselItem = ({ slides }: slides) => {
               Curry (Bom, pelo menos a foto foi antes de eu errar essa bandeja
               livre). Agora que voce já conheceu um pouco sobre mim, e sabe
               sobre minha paixão em aventuras, basquete e NBA, deixa eu te levar
-              para o universo das tecnologias junto com meus projetos que me
+              para o universo das tecnologias junto aos meus projetos que me
               fazem perder algumas noites de sono.
             </p>
           </div>

@@ -27,12 +27,15 @@ const Portfolio = () => {
         data-aos-duration="2000"
       >
         <div className="flex items-center justify-between flex-wrap">
-          <div className="mb-7 sm:mb-0">
+          <div className="mb-2 sm:mb-0">
             <h3 className="border-b-4 border-primaryColor text-headingColor text-[2rem] font-[700]  dark:text-textDark rounded-lg">
               Meus projetos
             </h3>
           </div>
         </div>
+        <p className="sm:hidden text-[1.1rem]">
+          Toque nos projetos para ver mais detalhes.
+        </p>
 
         {/* ====== imagens portfolio ====== */}
         <div className=" flex items-center gap-4 flex-wrap mt-12 z-20 ">
